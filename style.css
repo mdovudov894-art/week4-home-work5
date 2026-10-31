@@ -150,6 +150,77 @@
     height: 220px;
 }
 
+.section2{
+    margin-top: 150px;
+
+    h2{
+        font-size: 35px;
+        margin-bottom: 40px;
+        margin-left: 60px;
+    }
+}
+
+.box-s2{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    div{
+        width: 25%;
+        box-shadow: 0px 4px 30px 0px #00000026;
+        padding: 25px;
+        border-radius: 10px;
+
+        p{
+            color: #434343;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        img{
+            width: 65px;
+        }
+    }
+}
+
+.section3{
+    margin-top: 130px;
+    
+    h2{
+        font-size: 35px;
+        color: #0D233B;
+        margin-bottom: 50px;
+        margin-left: 90px;
+    }
+
+}
+
+.box-s3{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    .box1, .box2, .box3, .box4{
+        border: 1px solid #C4CDD4;
+        padding: 16px;
+        width: 17%;
+        border-radius: 5px;
+        height: 200px;
+        h3{
+            color: #279A59;
+        }
+
+        p{
+            color: #0D233B;
+            font-weight: 500;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+        .xat{
+            width: 50px;
+            height: 2px;
+            background-color: #279A59;
+            margin-top: 10px;
+        }
+    }
+}
 
 @media (max-width:700px) {
     .header1 {
@@ -170,19 +241,49 @@
     }
     .box-s1{
         flex-direction: column;
+        .box1, .box2{
+            width: 85%;
+            display: inline !important;
+            
+    p{
+        width: auto !important;
     }
-    .box1, .box2{
-        width: 85%;
-        display: inline !important;
-        
-p{
-    width: auto !important;
-}
+    
+            .s1-img{
+                margin-top: -100px !important;
+                margin-left: 33%;
+    
+            }
+        }
+    }
+    .section2{
+        h2{
+            margin-left: 5%;
+        }
+    }
+    .box-s2{
+        flex-direction: column;
+        align-items: center;
+        div{
+            width: 80%;
 
-        .s1-img{
-            margin-top: -100px !important;
-            margin-left: 33%;
+            img{
+                width: 50px;
+            }
+        }
+    }
 
+    .section3{
+
+        h2{
+            margin-left: 20px;
+        }
+    }
+    .box-s3{
+        flex-direction: column;
+        align-items: center !important;
+        .box1, .box2, .box3, .box4{
+            width: 80%;
         }
     }
 }
